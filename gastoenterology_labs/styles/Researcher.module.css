@@ -1,0 +1,31 @@
+/* Researcher.module.css */
+.cardsContainer {
+  display: flex;
+  justify-content: center; /* 카드를 가운데로 모음 */
+  gap: 1rem; /* 카드 사이의 간격을 줄임 */
+  height:500px;
+  
+}
+
+.profileCard {
+  display: flex;
+  flex-direction: row; /* 요소들을 수평으로 나열 */
+  align-items: center; /* 이미지와 텍스트를 수직 중앙 정렬 */
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 카드에 그림자 추가 */
+  background: #fff; /* 카드 배경색 */
+  border-radius: 10px; /* 카드 모서리를 둥글게 */
+  margin: 1rem; /* 카드 주변의 간격을 줄임 */
+  max-width: 35%; /* 카드의 최대 너비 설정 */
+}
+
+.profileImage {
+  border-radius: 50%;
+  margin-right: 1rem; /* 이미지와 텍스트 사이의 간격 */
+}
+
+.info {
+  display: flex;
+  flex-direction: column; /* 텍스트를 수직으로 나열 */
+  align-items: flex-start; /* 텍스트를 왼쪽에 정렬 */
+}

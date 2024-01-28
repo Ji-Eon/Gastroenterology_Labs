@@ -1,0 +1,44 @@
+.youtubeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 20px;
+  height: 350px;
+}
+
+.youtubeThumbnailCard {
+  position: relative;
+  width: 320px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+.projectsTitle {
+  align-self: flex-start; /* Aligns the title to the start of the section */
+  width: 100%; /* Full width to align with the cards below */
+  padding-left: 20px; /* Adjust to match the cards' alignment */
+  margin-bottom: 20px; /* Space between the title and the cards */
+}
+.youtubeThumbnailCard:hover {
+  transform: scale(1.05);
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* 최대 너비를 설정하여 중앙에 내용이 과도하게 넓어지지 않도록 합니다. */
+  margin: 0 auto; /* 페이지의 좌우 중앙에 배치 */
+}
+
+.projectsSection {
+  width: 120%; /* Or whatever width you prefer */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Aligns section content to the center */
+  padding: 20px;
+}
