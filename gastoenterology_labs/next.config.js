@@ -1,15 +1,8 @@
-// next.config.js
+const isProd = process.env.NODE_ENV === 'production';
+
 module.exports = {
-  // ... rest of the configuration.
-
-  output: 'standalone',
-
-  async rewrites() {
-    return [
-      {
-        source: '/',
-        destination: '/main', // Rewrite the root path to /login
-      },
-    ];
-  },
+  output: 'export', // 정적 HTML 출력 설정
+  assetPrefix: isProd ? '/Gastroenterology_Labs/' : '',
+  basePath: '/Gastroenterology_Labs',
+  trailingSlash: true,
 };
