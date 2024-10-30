@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./Gastroenterology_Labs/gastoenterology_labs  # 프로젝트 경로로 변경
+        working-directory: ./gastoenterology_labs  # 프로젝트 경로로 변경
 
     steps:
       - name: Checkout code
