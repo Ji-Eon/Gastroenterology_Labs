@@ -2,12 +2,14 @@
   "name": "connevo-cm",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Gastroenterology-Labs/blog",
+  "homepage": "https://ji-eon.github.io/Gastroenterology_Labs",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "next build && next export && touch out/.nojekyll && git add -f out/ && git commit -m 'deploy to gh-pages' && git subtree push --prefix out origin gh-pages"
+
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
