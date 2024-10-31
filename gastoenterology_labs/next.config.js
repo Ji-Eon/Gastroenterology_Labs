@@ -1,11 +1,15 @@
-const isProd = process.env.NODE_ENV === 'production';
-
+// next.config.js
 module.exports = {
-  output: 'export',
-  images: {
-    unoptimized: true,
+  // ... rest of the configuration.
+
+  output: 'standalone',
+
+  async rewrites() {
+    return [
+      {
+        source: '/',
+        destination: '/main', // Rewrite the root path to /login
+      },
+    ];
   },
-  assetPrefix: process.env.NODE_ENV === "production" ? "https://ji-eon.github.io/Gastroenterology_Labs" : "",
-  basePath: '/Gastroenterology_Labs',
-  trailingSlash: true,
 };
