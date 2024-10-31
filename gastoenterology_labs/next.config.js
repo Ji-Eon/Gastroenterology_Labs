@@ -5,7 +5,7 @@ module.exports = {
   images: {
     unoptimized: true,
   },
-  assetPrefix: isProd ? '/Gastroenterology_Labs/' : '',
+  assetPrefix: process.env.NODE_ENV === "production" ? "https://ji-eon.github.io/Gastroenterology_Labs/" : "",
   basePath: '/Gastroenterology_Labs',
   trailingSlash: true,
 };
