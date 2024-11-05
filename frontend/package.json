@@ -3,11 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://jieon.github.io/Gastroenterology_Labs/", // GitHub Pages 주소로 설정
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist" // dist 폴더를 gh-pages 브랜치에 배포
   },
   "dependencies": {
     "antd": "^5.21.6",
