@@ -4,9 +4,11 @@ import styles from './App.module.scss'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Dashboard from './components/page/Dashboard';
 import Research from './components/page/Research';
+const BASE_URL = import.meta.env.BASE_URL; // Vite 환경 변수 사용
+
 function App() {
   return (
-    <Router>
+    <Router basename={BASE_URL}>
       <div id="root">
         <AppHeader />
         <div className="main-content">
