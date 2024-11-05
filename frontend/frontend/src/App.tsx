@@ -1,16 +1,22 @@
 import { useState } from 'react'
 import AppHeader from './components/Header/Header'
 import styles from './App.module.scss'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Dashboard from './components/page/Dashboard';
+import Research from './components/page/Research';
 function App() {
   return (
-    <div id="root">
-      <AppHeader />
-      <div className="main-content">
-        {/* 메인 콘텐츠 추가 */}
-        <h1>Welcome to Gastroenterology AI Lab</h1>
-        <p>Explore our research, publications, and solutions.</p>
+    <Router>
+      <div id="root">
+        <AppHeader />
+        <div className="main-content">
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/research" element={<Research />} />
+          </Routes>
+        </div>
       </div>
-    </div>
+    </Router>
   )
 }
 
