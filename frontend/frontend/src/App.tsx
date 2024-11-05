@@ -1,11 +1,15 @@
 import { useState } from 'react'
-import './App.css'
-
+import AppHeader from './components/Header/Header'
+import styles from './App.module.scss'
 function App() {
   return (
-    <div>
-      <p>124ssssadadadwwws3</p>
-      <p>124ssssadadadwwws3</p>
+    <div id="root">
+      <AppHeader />
+      <div className="main-content">
+        {/* 메인 콘텐츠 추가 */}
+        <h1>Welcome to Gastroenterology AI Lab</h1>
+        <p>Explore our research, publications, and solutions.</p>
+      </div>
     </div>
   )
 }
