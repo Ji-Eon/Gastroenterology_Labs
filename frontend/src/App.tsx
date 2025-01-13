@@ -1,9 +1,8 @@
-import { useState } from 'react'
 import AppHeader from './components/Header/Header'
-import styles from './App.module.scss'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Dashboard from './components/page/Dashboard';
 import Research from './components/page/Research';
+import Footer from './components/Footer';
 const BASE_URL = import.meta.env.BASE_URL; // Vite 환경 변수 사용
 
 function App() {
@@ -18,6 +17,7 @@ function App() {
           </Routes>
         </div>
       </div>
+      <Footer />
     </Router>
   )
 }
