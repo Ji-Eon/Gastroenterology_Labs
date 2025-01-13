@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Carousel = ({ images, autoSlide = true, autoSlideInterval = 3000 }) => {
+const Carousel = ({ images, autoSlide = true, autoSlideInterval = 6000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -12,17 +12,17 @@ const Carousel = ({ images, autoSlide = true, autoSlideInterval = 3000 }) => {
     }
   }, [autoSlide, autoSlideInterval, images.length]);
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
+  // const nextSlide = () => {
+  //   setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  // };
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-  };
+  // const prevSlide = () => {
+  //   setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+  // };
 
   return (
-    <div className="relative w-full max-w-3xl mx-auto">
-      <div className="overflow-hidden relative h-64">
+    <div className="relative w-full mx-auto">
+      <div className="overflow-hidden relative h-96">
         {images.map((image, index) => (
           <div
             key={index}
@@ -34,7 +34,7 @@ const Carousel = ({ images, autoSlide = true, autoSlideInterval = 3000 }) => {
           </div>
         ))}
       </div>
-      <button
+      {/* <button
         className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2"
         onClick={prevSlide}
       >
@@ -45,7 +45,7 @@ const Carousel = ({ images, autoSlide = true, autoSlideInterval = 3000 }) => {
         onClick={nextSlide}
       >
         
-      </button>
+      </button> */}
       <div className="absolute bottom-0 left-0 right-0 flex justify-center mb-4">
         {images.map((_, index) => (
           <div
