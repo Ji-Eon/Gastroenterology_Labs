@@ -1,11 +1,14 @@
 import Carousel from "../Carousel/Carousel";
 import thumnail from '../../assets/concept/y_thum_1.png';
+import image1 from "../../assets/images/main_carousel_1.png";
+import image2 from "../../assets/images/main_carousel_2.png";
+import moon from '../../assets/concept/moon3.jpg';
+import yu from '../../assets/concept/yu.jpeg';
 
 const Page = () => {
+
   const images = [
-    `https://media.istockphoto.com/id/2103894533/ko/%EC%82%AC%EC%A7%84/business-people-in-the-office.jpg?s=2048x2048&w=is&k=20&c=vYcB8srl-qvRU0d_ZzUkNokxaj-D_0OmzlzE78Q1Dqw=`,
-    `https://cdn.pixabay.com/photo/2021/11/20/03/35/doctor-6810776_1280.png`,
-    `https://media.istockphoto.com/id/1979289147/ko/%EC%82%AC%EC%A7%84/ai-%EA%B8%B0%EC%88%A0%EC%9D%84-%ED%99%9C%EC%9A%A9%ED%95%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%84%9D-%EA%B3%BC%ED%95%99%EA%B3%BC-%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%84%9D%EA%B0%80-%EB%98%90%EB%8A%94-%EA%B3%BC%ED%95%99%EC%9E%90%EB%8A%94-%EC%BB%B4%ED%93%A8%ED%84%B0%EC%9D%98-%EB%B3%B5%EC%9E%A1%ED%95%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%84%B8%ED%8A%B8%EC%97%90-%EB%8C%80%ED%95%9C-%EC%A0%95%EB%B3%B4%EB%A5%BC-%EB%B6%84%EC%84%9D%ED%95%98%EA%B8%B0-%EC%9C%84%ED%95%B4-%EC%BB%B4%ED%93%A8%ED%84%B0%EC%99%80-%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%A9%EB%8B%88%EB%8B%A4-%EC%9D%B8%EC%82%AC%EC%9D%B4%ED%8A%B8-%EA%B0%9C%EB%B0%9C.jpg?s=2048x2048&w=is&k=20&c=7rVRtSPH75DCm8gAa1LCwwB5LXQNibdRkfuec_Dg5Cg=`
+    image1, image2
   ]
   return (
     <main className="space-y-9 mb-20">
@@ -16,7 +19,7 @@ const Page = () => {
       <section className="xl:w-[1170px] lg:w-[970px] md:w-[750px] sm:w-[450px] mx-auto">
         <div className="flex gap-5 flex-wrap md:flex-nowrap">
           <div className="border border-gray-300 p-4 w-full min-w-96 h-[600px] col-start-1 mx-auto">
-            <h2 className='text-2xl mb-4 font-bold'>Paper</h2>
+            <h2 className='text-2xl mb-4 font-bold'>Publication</h2>
             <ul className='space-y-2'>
               <li className='flex justify-between cursor-pointer hover:text-gray-400'><span>2023년도 구성원학 연구원 모집</span> <span>2023-11-18</span></li>
               <li className='flex justify-between cursor-pointer hover:text-gray-400'><span>2023년도 구성원학 연구원 모집</span> <span>2023-11-18</span></li>
@@ -27,7 +30,7 @@ const Page = () => {
             </ul>
           </div>
           <div className="border border-gray-300 p-4 w-full min-w-96 h-[600px] col-start-1  mx-auto lg:col-start-2">
-            <h2 className='text-2xl mb-4 font-bold'>News & Notice</h2>
+            <h2 className='text-2xl mb-4 font-bold'>Solution & Software</h2>
             <ul className='space-y-2'>
               <li className='flex justify-between cursor-pointer hover:text-gray-400'><span>2023년도 구성원학 연구원 모집</span> <span>2023-11-18</span></li>
               <li className='flex justify-between cursor-pointer hover:text-gray-400'><span>2023년도 구성원학 연구원 모집</span> <span>2023-11-18</span></li>
@@ -38,34 +41,62 @@ const Page = () => {
             </ul>
           </div>
         </div>
-      </section>
-      <section className="xl:w-[1170px] lg:w-[970px] md:w-[750px] sm:w-[450px] mx-auto">
-        <div className="border border-gray-300 p-4 w-full h-[450px] mx-auto">
-          <h2 className='text-2xl mb-4 font-bold'>Professor</h2>
-          <div className='flex gap-5 justify-evenly flex-wrap md:flex-nowrap'>
-            <div>
-              <h3 className='text-xl mb-4 font-semibold'>학력</h3>
-              <ul className='space-y-2'>
-                <li>윤지대학교 대학원 의학박사 (내과학)</li>
-                <li>윤지대학교 대학원 의학석사 (내과학)</li>
-                <li>충남대학교 의과대학 학사</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className='text-xl mb-4 font-semibold'>경력 및 연수</h3>
-              <ul className='space-y-2'>
-                <li>(현) 중앙대학교병원 호흡기알레르기내과 임상부교수</li>
-                <li>윤산의과대학 호흡기알레르기내과 부교수</li>
-                <li>서울아산병원 임상강사</li>
-                <li>윤지대학교병원 임상강사</li>
-                <li>건양대학교병원 임상강사</li>
-                <li>윤지대학교병원 내과 레지던트</li>
-                <li>윤지대학교병원 인턴</li>
-              </ul>
-            </div>
+        <div className="flex gap-5 flex-wrap md:flex-nowrap">
+          <div className="border border-gray-300 p-4 w-full min-w-96 h-[600px] col-start-1 mx-auto mt-5">
+            <h2 className='text-2xl mb-4 font-bold'>Technology</h2>
+            <ul className='space-y-2'>
+              <li className='flex justify-between cursor-pointer hover:text-gray-400'><span>2023년도 구성원학 연구원 모집</span> <span>2023-11-18</span></li>
+              <li className='flex justify-between cursor-pointer hover:text-gray-400'><span>2023년도 구성원학 연구원 모집</span> <span>2023-11-18</span></li>
+              <li className='flex justify-between cursor-pointer hover:text-gray-400'><span>2023년도 구성원학 연구원 모집</span> <span>2023-11-18</span></li>
+              <li className='flex justify-between cursor-pointer hover:text-gray-400'><span>2023년도 구성원학 연구원 모집</span> <span>2023-11-18</span></li>
+              <li className='flex justify-between cursor-pointer hover:text-gray-400'><span>2023년도 구성원학 연구원 모집</span> <span>2023-11-18</span></li>
+              <li className='flex justify-between cursor-pointer hover:text-gray-400'><span>2023년도 구성원학 연구원 모집</span> <span>2023-11-18</span></li>
+            </ul>
+          </div>
+          <div className="border border-gray-300 p-4 w-full min-w-96 h-[600px] col-start-1  mx-auto lg:col-start-2 mt-5">
+            <h2 className='text-2xl mb-4 font-bold'>Team</h2>
+            <ul className='space-y-5'>
+              <li className='flex gap-3 cursor-pointer hover:text-gray-400 items-center'>
+                <div className="w-20 h-20 overflow-hidden rounded-[50%]">
+                  <img src={moon} alt="team-image"/>
+                </div>
+                <div>
+                  <p className="text-lg font-semibold text-gray-500">Kyeong-min Moon</p>
+                  <p className="text-gray-400 pl-2">Doctor</p>
+                </div>
+              </li>
+              <li className='flex gap-3 cursor-pointer hover:text-gray-400 items-center'>
+                <div className="w-20 h-20 overflow-hidden rounded-[50%]">
+                  {/* <img src={moon} alt="team-image"/> */}
+                </div>
+                <div>
+                  <p className="text-lg font-semibold text-gray-500">Ji-un Kim</p>
+                  <p className="text-gray-400 pl-2">PL</p>
+                </div>
+              </li>
+              <li className='flex gap-3 cursor-pointer hover:text-gray-400 items-center'>
+                <div className="w-20 h-20 overflow-hidden rounded-[50%]">
+                  <img src={yu} alt="team-image"/>
+                </div>
+                <div>
+                  <p className="text-lg font-semibold text-gray-500">Yeong-ju Yu</p>
+                  <p className="text-gray-400 pl-2">Deveoloper</p>
+                </div>
+              </li>
+              <li className='flex gap-3 cursor-pointer hover:text-gray-400 items-center'>
+                <div className="w-20 h-20 overflow-hidden rounded-[50%]">
+                  {/* <img src={moon} alt="team-image"/> */}
+                </div>
+                <div>
+                  <p className="text-lg font-semibold text-gray-500">Sang-hwan Park</p>
+                  <p className="text-gray-400 pl-2">Developer</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
+      <section className="xl:w-[1170px] lg:w-[970px] md:w-[750px] sm:w-[450px] mx-auto"></section>
       <section className="xl:w-[1170px] lg:w-[970px] md:w-[750px] sm:w-[450px] mx-auto">
         <div className='flex gap-5 overflow-x-auto items-center'>
           <div className='font-semibold text-[26px] text-gray-light pr-4 border-r'>YouTube</div>

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const AppHeader: React.FC = () => {
   return (
-    <header className='fixed bg-white w-full shadow-sm'>
+    <header className='fixed bg-white w-full shadow-sm z-50'>
       <section>
         <div className='flex justify-end gap-4 p-2'>
           <button className='text-gray-light hover:font-medium'><Link to={'/'}>home</Link></button>
@@ -22,10 +22,10 @@ const AppHeader: React.FC = () => {
             </Link>
           </div>
           <nav className='flex mb-6'>
-            <Link to={'/research'} className='border-r pr-5 border-gray-light'>Research Member</Link>
-            <Link to={'/paper'} className='border-r px-5 border-gray-light'>Public Paper</Link>
+            <Link to={'/publication'} className='border-r px-5 border-gray-light'>Publication</Link>
             <Link to={'/solutions'} className='border-r px-5 border-gray-light'>Solution & Software</Link>
-            <Link to={'/news'} className='border-r px-5 border-gray-light'>News</Link>
+            <Link to={'/technology'} className='border-r px-5 border-gray-light'>Technology</Link>
+            <Link to={'/team'} className='border-r px-5 border-gray-light'>Team</Link>
           </nav>
         </div>
       </section>

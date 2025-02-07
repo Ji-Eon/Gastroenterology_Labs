@@ -1,12 +1,12 @@
 import React from 'react';
 
-const ResearchComponent: React.FC = () => {
+const TeamComponent: React.FC = () => {
   return (
     <div>
-      <h1>Research Members</h1>
+      <h1>Team</h1>
       <p>Details about research members and their work.</p>
     </div>
   );
 };
 
-export default ResearchComponent;
+export default TeamComponent;
