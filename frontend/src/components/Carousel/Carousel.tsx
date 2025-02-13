@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Carousel = ({ images, autoSlide = true, autoSlideInterval = 6000 }) => {
+const Carousel = ({ images, autoSlide = true, autoSlideInterval = 6000, height = "h-96" }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ const Carousel = ({ images, autoSlide = true, autoSlideInterval = 6000 }) => {
 
   return (
     <div className="relative w-full mx-auto">
-      <div className="overflow-hidden relative h-96">
+      <div className={`overflow-hidden relative ${height}`}>
         {images.map((image, index) => (
           <div
             key={index}
