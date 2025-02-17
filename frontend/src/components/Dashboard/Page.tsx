@@ -4,6 +4,8 @@ import image1 from "../../assets/images/main_carousel_1.png";
 import image2 from "../../assets/images/main_carousel_2.png";
 import moon from '../../assets/concept/moon3.jpg';
 import yu from '../../assets/concept/yu.jpeg';
+import kim from '../../assets/concept/kim.jpeg';
+import park from '../../assets/concept/park.png';
 
 const Page = () => {
 
@@ -61,16 +63,16 @@ const Page = () => {
                   <img src={moon} alt="team-image"/>
                 </div>
                 <div>
-                  <p className="text-lg font-semibold text-gray-500">Kyeong-min Moon</p>
+                  <p className="text-lg font-semibold text-gray-500">Kyoung-min Moon</p>
                   <p className="text-gray-400 pl-2">Doctor</p>
                 </div>
               </li>
               <li className='flex gap-3 cursor-pointer hover:text-gray-400 items-center'>
                 <div className="w-20 h-20 overflow-hidden rounded-[50%]">
-                  {/* <img src={moon} alt="team-image"/> */}
+                  <img src={kim} alt="team-image"/>
                 </div>
                 <div>
-                  <p className="text-lg font-semibold text-gray-500">Ji-un Kim</p>
+                  <p className="text-lg font-semibold text-gray-500">Ji-eon Kim</p>
                   <p className="text-gray-400 pl-2">PL</p>
                 </div>
               </li>
@@ -85,7 +87,7 @@ const Page = () => {
               </li>
               <li className='flex gap-3 cursor-pointer hover:text-gray-400 items-center'>
                 <div className="w-20 h-20 overflow-hidden rounded-[50%]">
-                  {/* <img src={moon} alt="team-image"/> */}
+                  <img src={park} alt="team-image"/>
                 </div>
                 <div>
                   <p className="text-lg font-semibold text-gray-500">Sang-hwan Park</p>
