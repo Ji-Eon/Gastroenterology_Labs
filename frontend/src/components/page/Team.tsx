@@ -24,15 +24,15 @@ const TeamComponent: React.FC = () => {
   ]
   const arward = ['2023.11 대한결핵 및 호흡기학회 제136차 추계학술대회 융합연구상']
   return (
-    <main className="space-y-9 mb-20">
+    <main className="space-y-9 mb-20 relative">
       <section className="xl:w-[1170px] lg:w-[970px] md:w-[750px] sm:w-[450px] mx-auto">
         <div className="flex mt-4">
           <SubSideMenu title="Team" menuList={menuList} />
-          <div className="w-3/4 space-y-10">
-            <div>
+          <div className="w-full lg:ml-72 md:ml-0 sm:ml-0">
+            <div id="md" className='scroll-m-[260px]'>
               <PageTitle title="M.D" page="team" />
-              <div id="md" className="mt-16 flex gap-20">
-                <div className="w-60 h-60 overflow-hidden lg:block md:hidden sm: hidden">
+              <div className="mt-16 flex gap-20 lg:flex-row md:flex-col sm: flex-col">
+                <div className="w-60 h-60 overflow-hidden ">
                   <img src={moon} alt="team-image" />
                 </div>
                 <div>
@@ -74,11 +74,11 @@ const TeamComponent: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div>
+            <div id="engineer" className='scroll-m-40'>
               <PageTitle title="engineer" page="team" />
-              <div id="engineer">
-                <div className="mt-16 flex gap-20">
-                  <div className="w-60 h-60 overflow-hidden lg:block md:hidden sm: hidden">
+              <div >
+                <div className="mt-16 flex gap-20 lg:flex-row md:flex-col sm: flex-col">
+                  <div className="w-60 h-60 overflow-hidden">
                     <img src={kim} alt="team-image" />
                   </div>
                   <div>
@@ -88,8 +88,8 @@ const TeamComponent: React.FC = () => {
                   </div>
                   <div className="mt-16 ml-4"></div>
                 </div>
-                <div className="mt-16 flex gap-20">
-                  <div className="w-60 h-60 overflow-hidden lg:block md:hidden sm: hidden">
+                <div className="mt-16 flex gap-20 lg:flex-row md:flex-col sm: flex-col">
+                  <div className="w-60 h-60 overflow-hidden">
                     <img src={yu} alt="team-image" />
                   </div>
                   <div>
@@ -99,8 +99,8 @@ const TeamComponent: React.FC = () => {
                   </div>
                   <div className="mt-16 ml-4"></div>
                 </div>
-                <div className="mt-16 flex gap-20">
-                  <div className="w-60 h-60 overflow-hidden lg:block md:hidden sm: hidden">
+                <div className="mt-16 flex gap-20 lg:flex-row md:flex-col sm: flex-col">
+                  <div className="w-60 h-60 overflow-hidden">
                     <img src={park} alt="team-image" />
                   </div>
                   <div>
