@@ -1,5 +1,6 @@
 import Carousel from "../Carousel/Carousel";
 import thumnail from '../../assets/concept/y_thum_1.png';
+
 import image1 from "../../assets/images/main_carousel_1.png";
 import image2 from "../../assets/images/main_carousel_2.png";
 import moon from '../../assets/concept/moon3.jpg';
@@ -7,11 +8,20 @@ import yu from '../../assets/concept/yu.jpeg';
 import kim from '../../assets/concept/kim.jpeg';
 import park from '../../assets/concept/park.png';
 
+import { useNavigate } from "react-router-dom";
+
+
 const Page = () => {
+  const navigate = useNavigate();
 
   const images = [
     image1, image2
   ]
+
+  const onClickMore = (url: string) => {
+    navigate(url);
+  };
+
   return (
     <main className="space-y-9 mb-20">
       <Carousel images={images} />
@@ -21,7 +31,10 @@ const Page = () => {
       <section className="xl:w-[1170px] lg:w-[970px] md:w-[750px] sm:w-[450px] mx-auto">
         <div className="flex gap-5 flex-wrap md:flex-nowrap">
           <div className="border border-gray-300 p-4 w-full min-w-96 h-[600px] col-start-1 mx-auto">
-            <h2 className='text-2xl mb-4 font-bold'>Publication</h2>
+            <div className="flex justify-between">
+              <h2 className='text-2xl mb-4 font-bold'>Publication</h2>
+              <span onClick={()=>onClickMore('research')} className="cursor-pointer">more</span>
+            </div>
             <ul className='space-y-2'>
               <li className='flex justify-between cursor-pointer hover:text-gray-400'><span>2023년도 구성원학 연구원 모집</span> <span>2023-11-18</span></li>
               <li className='flex justify-between cursor-pointer hover:text-gray-400'><span>2023년도 구성원학 연구원 모집</span> <span>2023-11-18</span></li>
@@ -32,7 +45,12 @@ const Page = () => {
             </ul>
           </div>
           <div className="border border-gray-300 p-4 w-full min-w-96 h-[600px] col-start-1  mx-auto lg:col-start-2">
-            <h2 className='text-2xl mb-4 font-bold'>Solution & Software</h2>
+
+            <div className="flex justify-between">
+              <h2 className='text-2xl mb-4 font-bold'>Solution & Software</h2>
+              <span onClick={()=>onClickMore('news')} className="cursor-pointer">more</span>
+            </div>
+
             <ul className='space-y-2'>
               <li className='flex justify-between cursor-pointer hover:text-gray-400'><span>2023년도 구성원학 연구원 모집</span> <span>2023-11-18</span></li>
               <li className='flex justify-between cursor-pointer hover:text-gray-400'><span>2023년도 구성원학 연구원 모집</span> <span>2023-11-18</span></li>

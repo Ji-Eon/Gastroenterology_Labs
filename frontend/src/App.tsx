@@ -5,6 +5,7 @@ import Team from './components/page/Team';
 import Footer from './components/Footer';
 import Publication from './components/page/Publication';
 import PublicationDetail from './components/page/PublicationDetail';
+
 const BASE_URL = import.meta.env.BASE_URL; // Vite 환경 변수 사용
 
 function App() {
